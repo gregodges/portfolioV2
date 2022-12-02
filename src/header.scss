@@ -1,0 +1,75 @@
+@import '../style.scss';
+@font-face {
+  font-family: 'title';
+  src: url('src/assets/fonts/Wayfinder CF Bold.otf');
+}
+@font-face {
+  font-family: 'finder_thin';
+  src: url('src/assets/fonts/Wayfinder CF Thin.otf');
+}
+.header{
+  position: absolute; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  background-color: $header__bg;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  &__title{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  width: 100%;
+  height: 9.2rem;
+  font-size:9rem;
+  font-family: title;
+  overflow: hidden;
+  // border: 1px solid black;
+  &__letter{
+    display: inline-block;
+    line-height: 8.5rem;
+    opacity: 1;
+    top: 0;
+  }
+  } 
+  &__description{
+    position: relative;
+    top: 50px;
+    padding: .5rem;
+    font-size: 3rem;
+    font-family: finder_thin ;
+    color: $main_text;
+    opacity: 0;
+    height: auto;
+    // border: 1px solid black;
+    span{
+      position: relative;
+      z-index: 2;
+    } 
+    &-alternance{
+      position: relative;
+      display: inline-block;
+
+    }
+   &-alternance::before{
+      content: '';
+      position:absolute;
+      display: inline-block;
+      bottom: 10%;
+      width: 100%;
+      height: 10px;
+      transform: scaleX(0);
+      border-radius: 10px;
+      background-color: $wild-code-school-color;
+      z-index: -1;
+      transform-origin: left;
+
+
+    }
+   
+  
+  }
+}

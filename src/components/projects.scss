@@ -1,0 +1,21 @@
+.projects{
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  transform: translateY(150vh);
+  background-color: #bae4e5; 
+
+  &__title{
+    position: relative;
+    font-size: 4rem;
+    cursor: default;
+    padding-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(50px);
+
+    &:hover{
+      text-decoration: line-through;
+    }
+  }
+}

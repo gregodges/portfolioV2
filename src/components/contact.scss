@@ -1,0 +1,30 @@
+@import '../../style.scss';
+.contact{
+  position: relative;
+  transform: translateY(130vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $black;
+  font-family: $font_header_thin;
+  margin-top: 40vh;
+
+  &__ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__li{
+      font-size: 3.5rem;
+      color: rgb(205, 205, 205);
+
+    }
+    a{
+      font-size: 2rem;
+      color: rgb(205, 205, 205);
+    }
+  }
+}
+

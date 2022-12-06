@@ -1,6 +1,17 @@
+@import '../../style.scss';
 .alternance{
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: red;
+  background-color: $black;
+  &__title{
+    font-family: $font_header_title;
+    color: $white;
+    font-size: 3rem;
+    margin: 1rem;
+  }
 }

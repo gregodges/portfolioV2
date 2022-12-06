@@ -1,60 +1,58 @@
 import React, { useEffect, useState } from 'react';
-import './XP.scss'
-import { XPProMain } from '../data';
-import { XPProSub } from '../data';
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
-import { ScrollToPlugin } from "gsap/all";
-import { CSSRulePlugin } from 'gsap/all';
+import './XP.scss';
+import { gsap } from 'gsap';
+import { ScrollTrigger, ScrollToPlugin, CSSRulePlugin } from 'gsap/all';
+import { XPProSub, XPProMain } from '../data';
+import xpCard from './XPCard'
+import XPCard from './XPCard';
+
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, CSSRulePlugin);
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-const XP = () => {
+function XP() {
   const [xpPro, setXpPro] = useState();
   const [xpSub, setXpSub] = useState();
   const cardFade = () => {
-    let card = gsap.utils.toArray('.test')
-    card.forEach((item)=>{
+    const card = gsap.utils.toArray('.xpCard');
+    card.forEach((item) => {
+      const tl = gsap.timeline({
 
-      const testo = gsap.timeline({
+        scrollTrigger: {
+          trigger: item,
+          start: 'top 90%',
+          end: 'bottom 1%',
+          scrub: .3
+        },
+      });
+      tl.to(item, {
+        opacity: 1,
+        scale: 1,
+      })
+        .to(item, {
+          opacity: 0,
+          scale: 0,
+          y:50
+        });
+    });
+  };
 
-        scrollTrigger:{
-          trigger:item,
-          start:'top 90%',
-          end:'bottom 10%',
-          scrub:true,
-        }
-       });
-       testo.to(item,{
-         opacity:1,
-         scale:1
-       })
-       .to(item,{
-         opacity:0,
-         scale:0
-       })
-    })
- 
-
-  }
-  useEffect(()=>{
+  useEffect(() => {
     setTimeout(() => {
       setXpPro(XPProMain);
       setXpSub(XPProSub);
-      cardFade()
+      cardFade();
     }, 1000);
-  },[])
-
+  }, []);
 
   return (
-    <div className='workXp'>
+    <div className="workXp">
+    <h2  className="workXp__title ">&::before</h2>
       {XPProMain
-      .map((el)=> (
-        <h5 className='test'>{el.title}</h5>
-      ))
-      }
+        .map((el, id) => (
+          <XPCard key={id} data={el}/>
+        ))}
     </div>
   );
-};
+}
 
 export default XP;

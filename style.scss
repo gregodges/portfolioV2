@@ -1,3 +1,35 @@
+@font-face {
+  font-family: 'fontText';
+  src: url('src/assets/fonts/Poppins-Light.ttf');
+}
+@font-face {
+  font-family: 'textMedium';
+  src: url('src/assets/fonts/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: 'title';
+  src: url('src/assets/fonts/Wayfinder CF Bold.otf');
+}
+@font-face {
+  font-family: 'finderThin';
+  src: url('src/assets/fonts/Wayfinder CF Thin.otf');
+}
+
+
+$main_text: rgb(20, 19, 19);
+$white: #FFFFFF;
+$header__bg:#faebd7;
+$wild-code-school-color : #F76A6A;
+$projectsColor :#d0f1f1;
+$projectsColorDark :#d0e3e397;
+$workColor:#ffd8e3;
+$fontText : fontText;
+$font_title_project: textMedium;
+$font_header_title : title;
+$font_header_thin : finderThin;
+$font_size_sections_header : 8rem;
+$black :rgb(32, 32, 32);
+$white: rgb(209, 209, 209);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -17,6 +49,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+  list-style:none;
+
 }
 a{
   color: black;
@@ -46,9 +80,8 @@ table {
 	border-spacing: 0;
 }
 
-$main_text: rgb(20, 19, 19);
-$white: #FFFFFF;
-$header__bg:#faebd7;
-$wild-code-school-color : #F76A6A;
-$projectsColor :#bae4e5;
-$workColor:#f1a9a0;
+
+
+p {
+  font-family: $fontText;
+}

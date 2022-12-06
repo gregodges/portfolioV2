@@ -1,0 +1,72 @@
+@import '../../style.scss';
+.hobbies{
+  position: relative;
+  background-color:$workColor;
+  transform: translateY(140vh);
+  width: 500%;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  box-sizing: border-box;
+
+  &__panel{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    top: 0%;
+    width: 100%;
+    z-index: 100;
+    &__photo{
+      position: absolute;
+      top: 40%;
+      left: 90%;
+      width: 30vh;
+      height: auto;
+      background-color: $black;
+    }
+    .photo1{
+      z-index: 10;
+    }
+    .photo2{
+      top: 60%;
+      left: 10%;
+    }
+    .photo3{
+      top: 30%;
+      left: 25%;
+    }
+    .photo4{
+      top: 10%;
+      left: 80%;
+    }
+    .photo5{
+      top: 10%;
+      left: 90%;
+    }
+    .photo6{
+      top: 78%;
+      left: 85%;
+    }
+    &__title{
+      font-size:$font_size_sections_header;
+      opacity: 0;
+      transform: translateY(300px);
+      z-index: 100;
+      font-family: $font_header_thin;
+    }
+    
+    &__stillScrolling{
+      border:1px solid white;
+      font-family: $font_header_title;
+      color: rgb(233, 233, 233);
+      border-radius: 200vw;
+      font-size: 17vw;
+      padding: 3vw  ;
+      text-transform: uppercase;
+      text-align: center;
+      align-self: center;
+    }
+  }
+
+}

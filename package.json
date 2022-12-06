@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "fix": "npm --prefix run fix"
+    "fix": "npm --prefix run fix",
+    "lint": "eslint --fix --ext .js,.jsx ."
   },
   "dependencies": {
     "gsap": "^3.11.3",

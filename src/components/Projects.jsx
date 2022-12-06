@@ -1,77 +1,69 @@
 import React, { useEffect, useState } from 'react';
-import './projects.scss'
-import data from '../data'
+import './projects.scss';
+import { gsap } from 'gsap';
+import { ScrollTrigger, ScrollToPlugin, CSSRulePlugin } from 'gsap/all';
 import ProjetCard from './ProjetCard';
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
-import { ScrollToPlugin } from "gsap/all";
-import { CSSRulePlugin } from 'gsap/all';
+import data from '../data';
+
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, CSSRulePlugin);
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-
-
-
-
-
-const Projects = () => {
+function Projects() {
   const [projects, setProjects] = useState([]);
   const cardFade = () => {
-  let cards = gsap.utils.toArray(".projetCard");
-cards.forEach((card, index)=>{
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: card,
-      start:"top 70%",
-      toggleActions:"play none none resume",
-      end: "68% 68%",
-      }
-  });
-  tl.to(card, {
-    opacity:1,
-    y:0
+    const cards = gsap.utils.toArray('.projetCard');
+    cards.forEach((card, index) => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: card,
+          start: 'top 70%',
+          toggleActions: 'play none none resume',
+          end: '68% 68%',
+
+        },
+      });
+      tl.to(card, {
+        opacity: 1,
+        y:0,
+        duration:1
+      });
     });
-  });
-    }
-const projectTitlefade = () =>{
-  gsap.timeline().to('.projects__title', {
-    opacity:1,
-    y:0,
-    scrollTrigger:{
-      trigger: ' .projects__title',
-      start:'top 70%',
-      end : 'center 60%',
-      scrub: 0,
-      toggleActions: 'play none none pause'
+  };
+  const projectTitlefade = () => {
+    gsap.timeline().to('.projects__title', {
+      opacity: 1,
+      y: 0,
+      scrollTrigger: {
+        trigger: ' .projects__title',
+        start: 'top 70%',
+        end: 'center 60%',
+        scrub: 0,
+        toggleActions: 'play none none pause',
 
-    }
-  })
-}
-   
+      },
+    });
+  };
 
+  useEffect(() => {
+    setProjects(data);
+  }, []);
 
-  useEffect(()=>{
-    setProjects(data)
-  },[])
-
-
-  useEffect(()=>{
+  useEffect(() => {
     setTimeout(() => {
-      cardFade()
-      projectTitlefade()
+      cardFade();
+      projectTitlefade();
     }, 1000);
-  },[])
-
+  }, []);
 
   return (
-    <div id='projects' className='projects'>
-  <h2 className='projects__title'>projets</h2>
-      {projects.map((proj, id)=>(
-        <ProjetCard key={id} projet={proj}/>
+    <div id="projects" className="projects">
+      <h2 className="projects__title">projets</h2>
+      {projects.map((proj, id) => (
+        <ProjetCard key={id} projet={proj} />
       ))}
-      
+
     </div>
   );
-};
+}
 
 export default Projects;

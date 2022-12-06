@@ -1,12 +1,5 @@
 @import '../style.scss';
-@font-face {
-  font-family: 'title';
-  src: url('src/assets/fonts/Wayfinder CF Bold.otf');
-}
-@font-face {
-  font-family: 'finder_thin';
-  src: url('src/assets/fonts/Wayfinder CF Thin.otf');
-}
+
 .header{
   position: absolute; 
   display: flex;
@@ -16,6 +9,7 @@
   width: 100vw;
   height: 100vh;
   opacity: 1;
+
   &__title{
   position: relative;
   display: flex;
@@ -25,7 +19,7 @@
   width: 100%;
   height: 9.2rem;
   font-size:9rem;
-  font-family: title;
+  font-family: $font_header_title;
   overflow: hidden;
   // border: 1px solid black;
   &__letter{
@@ -45,6 +39,7 @@
     opacity: 0;
     height: auto;
     // border: 1px solid black;
+    
     span{
       position: relative;
       z-index: 2;
@@ -71,5 +66,51 @@
     }
    
   
+  }
+}
+
+@media all and (min-width: 560px) {
+  .header{
+    padding: 1rem 2rem;
+    &__title{
+      height: 16rem;
+      font-size:15rem;
+      &__letter{
+        display: inline-block;
+        opacity: 1;
+        top: 0;
+      }
+      
+    }
+    &__description{
+      position: relative;
+      top:2.5rem;
+      font-size: 3.4rem;
+      width: 70%;
+      align-self: flex-start;
+    }
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .header{
+    padding: 1rem 2rem;
+    &__title{
+      height: 16rem;
+      font-size:20rem;
+      &__letter{
+        display: inline-block;
+        opacity: 1;
+        top: 0;
+      }
+      
+    }
+    &__description{
+      position: relative;
+      top:2.5rem;
+      font-size: 3.4rem;
+      width: 70%;
+      align-self: flex-start;
+    }
   }
 }

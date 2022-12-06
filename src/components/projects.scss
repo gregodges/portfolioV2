@@ -1,18 +1,25 @@
+@import '../../style.scss';
+@font-face {
+  font-family: 'finder_thin';
+  src: url('src/assets/fonts/Wayfinder CF Thin.otf');
+}
 .projects{
   position: relative;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   transform: translateY(150vh);
-  background-color: #bae4e5; 
+  background-color: $projectsColor;
 
   &__title{
     position: relative;
-    font-size: 4rem;
+    font-size: 6rem;
     cursor: default;
     padding-bottom: 2rem;
     opacity: 0;
     transform: translateY(50px);
+    font-family: finder_thin;
+    text-transform: uppercase;
 
     &:hover{
       text-decoration: line-through;

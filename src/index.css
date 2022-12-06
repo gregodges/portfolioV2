@@ -1,0 +1,8 @@
+body{
+  overflow-x: hidden;
+}
+a:hover{
+  cursor: url(src/assets/img/arrow_greg3.png), auto;
+
+  
+}

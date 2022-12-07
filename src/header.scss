@@ -56,9 +56,9 @@
       display: inline-block;
       bottom: 10%;
       width: 100%;
-      height: 10px;
+      height: 25%;
       transform: scaleX(0);
-      border-radius: 10px;
+      border-radius: 100rem;
       background-color: $wildCodeSchoolColor ;
       z-index: -1;
       transform-origin: left;
@@ -93,25 +93,9 @@
   }
 }
 
-// @media all and (min-width: 1024px) {
-//   .header{
-//     padding: 1rem 2rem;
-//     &__title{
-//       height: 16rem;
-//       font-size:20rem;
-//       &__letter{
-//         display: inline-block;
-//         opacity: 1;
-//         top: 0;
-//       }
-      
-//     }
-//     &__description{
-//       position: relative;
-//       top:2.5rem;
-//       font-size: 3.4rem;
-//       width: 70%;
-//       align-self: flex-start;
-//     }
-//   }
-// }
+@media all and (min-width: 1800px) {
+  .header__description{
+    font-size: 13rem;
+  }
+
+}

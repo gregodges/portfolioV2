@@ -94,3 +94,31 @@
    }
  } 
 }
+
+@media all and (min-width: 1800px) {
+  .projetCard{
+    h4{
+      font-size: 9rem;
+    }
+    p{
+      font-size: 1.8rem;
+    }
+    .stacks{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      .stack{
+        position: relative;
+        font-size: 1.4rem;
+        margin: .5rem ;
+        padding: .3rem;
+        border: 1px solid rgb(200, 200, 200);
+        border-radius: 5px;
+        background-color: $projectsColorDark;
+        font-family: $font_title_project;
+      }
+
+  }
+  }
+}

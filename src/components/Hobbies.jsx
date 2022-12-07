@@ -67,12 +67,12 @@ const photoMid = gsap.utils.toArray('.photoMid')
 
 photoMid.forEach((pic)=>{
   gsap.to(pic,{
-    x:-450,
+    x:-650,
     scrollTrigger:{
       trigger:'.hobbies__panel--pages',
       start:'80% 50%',
-      end:'300% top',
-      scrub:1
+      end:'900% top',
+      scrub:2
     }
   
   })
@@ -80,11 +80,11 @@ photoMid.forEach((pic)=>{
 
 photoSlow.forEach((pic)=>{
   gsap.to(pic,{
-    x:-300,
+    x:-200,
     scrollTrigger:{
       trigger:'.hobbies__panel--pages',
       start:'80% 50%',
-      end:'300% top',
+      end:'900% top',
       scrub:1
     }
   
@@ -93,12 +93,12 @@ photoSlow.forEach((pic)=>{
 
 photoFast.forEach((pic)=>{
   gsap.to(pic,{
-    x:-600,
+    x:-800,
     scrollTrigger:{
       trigger:'.hobbies__panel--pages',
       start:'80% 50%',
-      end:'300% top',
-      scrub:1
+      end:'900% top',
+      scrub:0
     }
   
   })
@@ -124,7 +124,7 @@ useEffect(()=>{
         <img className='hobbies__panel__photo photo2 photoMid' src="src/assets/img/CNV000018.png" alt="" />
         <img className='hobbies__panel__photo photo3 photoSlow' src="src/assets/img/CNV000029&.png" alt="" />
         <img className='hobbies__panel__photo photo4 photoMid' src="ssrc/assets/img/CNV000013.png" alt="" />
-        <img className='hobbies__panel__photo photo5 photoFast' src="src/assets/img/CNV000015.png" alt="" />
+        <img className='hobbies__panel__photo photo5 photoSlow' src="src/assets/img/CNV000015.png" alt="" />
         <img className='hobbies__panel__photo photo6 photoFast' src="src/assets/img/CNV000026.png" alt="" />
     </section>
     <section className='hobbies__panel'>
@@ -132,7 +132,7 @@ useEffect(()=>{
         <img className='hobbies__panel__photo photo5 photoSlow' src="ssrc/assets/img/1302-14a.JPG" alt="" />
         <img className='hobbies__panel__photo photo3 photoSlow' src="src/assets/img/1302-18a.JPG" alt="" />
         <img className='hobbies__panel__photo photo4 photoMid' src="src/assets/img/1303-06a.JPG" alt="" />
-        <img className='hobbies__panel__photo photo2 photoFast' src="src/assets/img/001004030016.jpg" alt="" />
+        <img className='hobbies__panel__photo photo2 photoFast' src="src/assets/img/000008.JPG" alt="" />
         <img className='hobbies__panel__photo photo6 photoMid' src="src/assets/img/001025280010.jpg" alt="" />
     </section>
     <section className='hobbies__panel'>
@@ -140,7 +140,7 @@ useEffect(()=>{
         <img className='hobbies__panel__photo photo5 photoSlow' src="src/assets/img/G (66).jpg" alt="" />
         <img className='hobbies__panel__photo photo3 photoSlow' src="src/assets/img/G (106).jpg" alt="" />
         <img className='hobbies__panel__photo photo4 photoMid' src="src/assets/img/G (120).jpg" alt="" />
-        <img className='hobbies__panel__photo photo2 photoFast' src="src/assets/img/G.jpg" alt="" />
+        <img className='hobbies__panel__photo photo2 photoFast' src="src/assets/img/CNV000030.png" alt="" />
         <img className='hobbies__panel__photo photo6 photoMid' src="src/assets/img/CNV000026.png" alt="" />
     </section>
     <section className='hobbies__panel test '>

@@ -12,7 +12,7 @@ const Contact = () => {
       <li className='contact__ul__li'><a href="mailto:ledez.greg@gmail.com">LEDEZ.GREG@GMAIL.COM</a></li>
       <li className='contact__ul__li'><span>06-40-55-71-42</span></li>
       <li className='contact__ul__li'><a  target='_blank' href="https://github.com/gregodges">GITHUB/GREGODGES</a></li>
-      <NavLink to="/infoalternance">
+      <NavLink to="./infoalternance">
       <li className='contact__ul__li'><span>F.A.Q</span></li>
       </NavLink>
     </ul>

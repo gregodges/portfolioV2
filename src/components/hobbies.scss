@@ -19,17 +19,17 @@
     z-index: 100;
     &__photo{
       position: absolute;
-      top: 40%;
-      left: 90%;
       width: 30vh;
       height: auto;
       background-color: $black;
     }
     .photo1{
       z-index: 10;
+      top: 60%;
+      left: 40%;
     }
     .photo2{
-      top: 60%;
+      top: 10%;
       left: 10%;
     }
     .photo3{
@@ -37,16 +37,16 @@
       left: 25%;
     }
     .photo4{
-      top: 10%;
+      top: 60%;
       left: 80%;
     }
     .photo5{
-      top: 10%;
-      left: 90%;
+      top: 5%;
+      left: 60%;
     }
     .photo6{
-      top: 78%;
-      left: 85%;
+      top: 48%;
+      left: 95%;
     }
     &__title{
       font-size:$font_size_sections_header;
@@ -70,3 +70,33 @@
   }
 
 }
+@media all and (min-width:650px) {
+  .hobbies{
+    &__panel{
+    z-index: 700,
+
+      &__title{
+    font-size: 9rem;
+  }
+  &__photo{
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    width: 30vw;
+    height: auto;
+    background-color: $black;
+
+  }
+    }
+}
+}
+@media all and (min-width:800px) {
+  .hobbies{
+    &__panel{
+    z-index: 700;
+
+      &__title{
+    font-size: 12rem;
+  }
+}
+  }}

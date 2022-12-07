@@ -25,7 +25,7 @@ function Projects() {
       tl.to(card, {
         opacity: 1,
         y:0,
-        duration:1
+        duration:.6
       });
     });
   };
@@ -58,9 +58,11 @@ function Projects() {
   return (
     <div id="projects" className="projects">
       <h2 className="projects__title">projets</h2>
+      <div className="projects__card__container">
       {projects.map((proj, id) => (
         <ProjetCard key={id} projet={proj} />
       ))}
+      </div>
 
     </div>
   );

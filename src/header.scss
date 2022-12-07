@@ -58,7 +58,7 @@
       height: 10px;
       transform: scaleX(0);
       border-radius: 10px;
-      background-color: $wild-code-school-color;
+      background-color: $wildCodeSchoolColor ;
       z-index: -1;
       transform-origin: left;
 
@@ -74,7 +74,7 @@
     padding: 1rem 2rem;
     &__title{
       height: 16rem;
-      font-size:15rem;
+      font-size:14rem;
       &__letter{
         display: inline-block;
         opacity: 1;
@@ -84,7 +84,7 @@
     }
     &__description{
       position: relative;
-      top:2.5rem;
+      top:1rem;
       font-size: 3.4rem;
       width: 70%;
       align-self: flex-start;
@@ -92,25 +92,25 @@
   }
 }
 
-@media all and (min-width: 1024px) {
-  .header{
-    padding: 1rem 2rem;
-    &__title{
-      height: 16rem;
-      font-size:20rem;
-      &__letter{
-        display: inline-block;
-        opacity: 1;
-        top: 0;
-      }
+// @media all and (min-width: 1024px) {
+//   .header{
+//     padding: 1rem 2rem;
+//     &__title{
+//       height: 16rem;
+//       font-size:20rem;
+//       &__letter{
+//         display: inline-block;
+//         opacity: 1;
+//         top: 0;
+//       }
       
-    }
-    &__description{
-      position: relative;
-      top:2.5rem;
-      font-size: 3.4rem;
-      width: 70%;
-      align-self: flex-start;
-    }
-  }
-}
+//     }
+//     &__description{
+//       position: relative;
+//       top:2.5rem;
+//       font-size: 3.4rem;
+//       width: 70%;
+//       align-self: flex-start;
+//     }
+//   }
+// }

@@ -27,7 +27,7 @@
 
   }
   &__title{
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     font-family: $font_header_thin;
   }
@@ -83,3 +83,27 @@
   z-index: -1;
 }
 }
+
+@media all and (min-width: 650px) {
+  .xpCard{
+    width: 65vw;
+    &__title{
+      font-size: 3rem;
+    }
+    &__icon{
+      top: 60%;
+    }
+  }
+}
+
+@media all and (min-width: 800px) {
+  .xpCard{
+    width: 27vw;
+    height: 70vh;
+    transform: translateY(60vh)  scale(1);
+    opacity: 0;
+    overflow-y: scroll;
+   
+  }
+}
+

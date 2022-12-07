@@ -10,7 +10,7 @@ const data = [
   {
     id: 2,
     title: 'Time Travel',
-    txt: 'Ce projet à été développé en 24h lors du hackaton de la Wild Code School. Le sujet était simple, livrer un projet web sur le théme du voyage. Nous avons décider de développer un mini jeu dans le navigateur. Ce projet nous a valu le prix du jury. ',
+    txt: 'Ce projet a été développé en 24h lors du hackaton de la Wild Code School. Le sujet était simple, livrer un projet web sur le thème du voyage. Nous avons décidé de développer un mini jeu dans le navigateur. Ce projet nous a valu le prix du jury. ',
     stack: ['HTML', 'SCSS', 'Vanilla.Js', 'GSAP', 'GitHub'],
     github: 'https://github.com/gregodges/time-travel',
     photo: 'src/assets/img/timetraveler.png',
@@ -18,7 +18,7 @@ const data = [
   {
     id: 3,
     title: "Drink'r",
-    txt: "Drink'r est un moteur de recherche de cocktails. Développé de A à Z en 6 semaines.",
+    txt: "Drink'r est un moteur de recherche de cocktails, faisant appel à un API. Il a été développé de A à Z en 6 semaines, en suivant la méthode AGILE",
     stack: ['HTML', 'CSS', 'React.js', 'GitHub'],
     github: 'http://www.github.com',
     photo: 'src/assets/img/drinkr.png',
@@ -26,7 +26,7 @@ const data = [
   {
     id: 4,
     title: 'The Weeknd',
-    txt: "Site vitrine pour promouvoir la  tournée de l'artiste The Weeknd",
+    txt: "Ce site vitrine pour promouvoir la  tournée de l'artiste The Weeknd a été réalisé en 2 semaines dans le cadre d'un projet d'ecole.",
     stack: ['HTML', 'CSS', 'Vanilla.js', 'GitHub'],
     github: 'https://github.com/gregodges/theWeeknd-project',
     photo: 'src/assets/img/theweeknd.png',
@@ -34,7 +34,7 @@ const data = [
   {
     id: 5,
     title: 'MontBlanc',
-    txt: "Site vitrine réaliser pour travailler les notions en CSS et les bases de l'intégration via un projet du Youtuber BenjaminCode",
+    txt: "Site vitrine réalisé pour travailler les notions en CSS et les bases de l'intégration via un projet du Youtuber BenjaminCode",
     stack: ['HTML', 'CSS'],
     github: 'https://github.com/gregodges/Montblanc',
     photo: 'src/assets/img/Montblanc.png',
@@ -61,7 +61,7 @@ export const XPProMain = [
     id: 1,
     title: 'Agent commercial à bord des trains',
     entreprise: 'sncf',
-    txt: "Ce post à haute responsabilité en termes de sécurité consiste à réaliser les essais techniques et vérifications des rames: -Présence et fonctionnement du matériel de sécurité et de communication. -L'accueil des voyageurs et veiller au bon déroulement du voyage en autonomie.",
+    txt: "Ce post à haute responsabilité en termes de sécurité consiste à réaliser les essais techniques et vérifications des rames: Présence et fonctionnement du matériel de sécurité et de communication. L'accueil des voyageurs et veiller au bon déroulement du voyage en autonomie.",
     years: 'Mars 2021 - Avril 2022',
     skills: ['Autonomie', "Travail d'équipe", 'Tâches de sécurité', 'Adaptabilité', 'Relation client'],
     icon :'src/assets/img/train.png'
@@ -80,7 +80,7 @@ export const XPProMain = [
     id: 3,
     title: 'Personnel navigant commercial',
     entreprise: 'Volotea',
-    txt: 'Volotea Airlines est une compagnie aérienne à bas prix espagnole. Elle relie principalement des capitales régionales et des petites et moyennes villes en Europe. Mes missions étaient:- Essais techniques et vérifications de la cabine- Préparation commerciale de la cabine et vente pendant le vol- Accueil et assistance aux passagers- Responsabilité du bon déroulement du vol',
+    txt: "Volotea Airlines est une compagnie aérienne à bas prix espagnole. Elle relie principalement des capitales régionales et des petites et moyennes villes en Europe. Mes missions étaient de réaliser les essais techniques et vérifications de la cabine, la préparation commerciale, la vente pendant le vol ainsi que l'accueil et assistance aux passagers. Responsabilité du bon déroulement du vol",
     years: 'Juin 2017 - Octobre 2017',
     skills: ['Autonomie', 'Agilité', "Coordination d'équipe", "Prise d'initiatives", 'Tâches de sécurité', 'Adaptabilité', 'veille'],
     icon :'src/assets/img/plane.png'

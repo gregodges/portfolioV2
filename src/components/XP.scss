@@ -17,11 +17,30 @@
   font-size: 6rem;
   opacity: 0;
   font-family: finder_thin;
-
-  &:hover{
-    text-decoration: line-through;
-  }
-
   }
   
+}
+
+@media all and (min-width : 650px) {
+  .workXp{
+    &__title{
+      font-size: 9rem ;
+    }
+  }
+}
+
+@media all and (min-width: 800px) {
+  .workXp{
+    height: 200vh; // was 350vh
+    &__title{
+      font-size: 12rem;
+    }
+    &__card__container{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2%;
+    }
+  }
 }

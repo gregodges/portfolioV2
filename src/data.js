@@ -20,7 +20,7 @@ const data = [
     title: "Drink'r",
     txt: "Drink'r est un moteur de recherche de cocktails, faisant appel à un API. Il a été développé de A à Z en 6 semaines, en suivant la méthode AGILE",
     stack: ['HTML', 'CSS', 'React.js', 'GitHub'],
-    github: 'http://www.github.com',
+    github: 'https://drink-r.netlify.app/',
     photo: 'src/assets/img/drinkr.png',
   },
   {
@@ -64,7 +64,7 @@ export const XPProMain = [
     txt: "Ce post à haute responsabilité en termes de sécurité consiste à réaliser les essais techniques et vérifications des rames: Présence et fonctionnement du matériel de sécurité et de communication. L'accueil des voyageurs et veiller au bon déroulement du voyage en autonomie.",
     years: 'Mars 2021 - Avril 2022',
     skills: ['Autonomie', "Travail d'équipe", 'Tâches de sécurité', 'Adaptabilité', 'Relation client'],
-    icon :'src/assets/img/train.png'
+    icon: 'src/assets/img/train.png',
   },
   {
     id: 2,
@@ -73,7 +73,7 @@ export const XPProMain = [
     txt: "En tant que steward  mes principales responsabilités consistaient à m'assurer que l'avion était opérationnel et que les passagers étaient à l'aise et en sécurité.",
     years: 'Mars 2018 - Mars 2021',
     skills: ['Autonomie', 'Agilité', "Coordination d'équipe", "Prise d'initiatives", 'Tâches de sécurité', 'Adaptabilité', 'veille'],
-    icon :'src/assets/img/plane.png'
+    icon: 'src/assets/img/plane.png',
 
   },
   {
@@ -83,7 +83,7 @@ export const XPProMain = [
     txt: "Volotea Airlines est une compagnie aérienne à bas prix espagnole. Elle relie principalement des capitales régionales et des petites et moyennes villes en Europe. Mes missions étaient de réaliser les essais techniques et vérifications de la cabine, la préparation commerciale, la vente pendant le vol ainsi que l'accueil et assistance aux passagers. Responsabilité du bon déroulement du vol",
     years: 'Juin 2017 - Octobre 2017',
     skills: ['Autonomie', 'Agilité', "Coordination d'équipe", "Prise d'initiatives", 'Tâches de sécurité', 'Adaptabilité', 'veille'],
-    icon :'src/assets/img/plane.png'
+    icon: 'src/assets/img/plane.png',
   },
 ];
 

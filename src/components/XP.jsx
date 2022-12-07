@@ -8,22 +8,22 @@ import XPCard from './XPCard';
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, CSSRulePlugin);
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-const XP =() => {
+function XP() {
   const [xpPro, setXpPro] = useState();
   const windowX = window.innerWidth;
 
   const cardFadeDesktop = () => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: '.xpCard',
-          start: 'top 60%',
-          end: 'bottom 1%'
-        },
-      });
-      tl.to('.xpCard', {
-        opacity: 1,
-        stagger: .2
-      })
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.xpCard',
+        start: 'top 60%',
+        end: 'bottom 1%',
+      },
+    });
+    tl.to('.xpCard', {
+      opacity: 1,
+      stagger: 0.2,
+    });
   };
 
   const cardFade = () => {
@@ -35,7 +35,7 @@ const XP =() => {
           trigger: item,
           start: 'top 90%',
           end: 'bottom 1%',
-          scrub: .3
+          scrub: 0.3,
         },
       });
       tl.to(item, {
@@ -45,39 +45,37 @@ const XP =() => {
         .to(item, {
           opacity: 0,
           scale: 0,
-          y:50
+          y: 50,
         });
     });
   };
-{
-  windowX < 800 ?
+  {
+    windowX < 800
 
-  useEffect(() => {
-    setTimeout(() => {
-      setXpPro(XPProMain);
+      ? useEffect(() => {
+        setTimeout(() => {
+          setXpPro(XPProMain);
 
-      cardFade();
-    }, 1000);
-  }, [])
+          cardFade();
+        }, 1000);
+      }, [])
 
-  : 
-  useEffect(() => {
-    setTimeout(() => {
-      setXpPro(XPProMain);
-      cardFadeDesktop();
-    }, 1000);
-  }, []);
-  
-}
+      : useEffect(() => {
+        setTimeout(() => {
+          setXpPro(XPProMain);
+          cardFadeDesktop();
+        }, 1000);
+      }, []);
+  }
 
   return (
     <div className="workXp">
-    <h2  className="workXp__title ">&::before</h2>
-    <div className="workXp__card__container">
-      {XPProMain
-        .map((el, id) => (
-          <XPCard key={id} data={el}/>
-        ))}
+      <h2 className="workXp__title ">Before </h2>
+      <div className="workXp__card__container">
+        {XPProMain
+          .map((el, id) => (
+            <XPCard key={id} data={el} />
+          ))}
       </div>
     </div>
   );

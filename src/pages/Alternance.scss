@@ -81,7 +81,16 @@
     font-size: 2rem;
     color: $wildCodeSchoolColor;
     text-decoration: underline;
-    padding:  .5rem 0;
+    padding:  1rem 0;
+  }
+  li{
+    margin: .6rem;
+    a{
+      color: rgb(118, 118, 118);
+      &:hover{
+        color: $white;
+      }
+    }
   }
 }
   }

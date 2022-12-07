@@ -6,24 +6,22 @@ import Projects from '../components/Projects';
 import Header from '../Header';
 import '../header.scss';
 import Hobbies from '../components/Hobbies';
-import StillScroll from '../components/CallMe'
+import StillScroll from '../components/CallMe';
 import Contact from '../components/Contact';
 
-const Home = () => {
+function Home() {
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, CSSRulePlugin);
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
   const alternanceBefore = CSSRulePlugin.getRule('.header__description-alternance::before');
   const windowX = window.innerWidth;
-  
+
   const letterTitle = () => {
-
-
     const headerTl = gsap.timeline();
     headerTl
       .to(
         '.header__title__letter',
         {
-          y: -250, 
+          y: -250,
           opacity: 1,
           stagger: 0.03,
           duration: 1.5,
@@ -54,7 +52,7 @@ const Home = () => {
       .to(
         '.header__title__letter',
         {
-          y: -150, 
+          y: -150,
           opacity: 1,
           stagger: 0.03,
           duration: 1.5,
@@ -91,112 +89,103 @@ const Home = () => {
         pin: true,
       },
     });
-  }
-  
+  };
+
   const bgChangeXP = () => {
     const tl = gsap.timeline({
-      scrollTrigger:{
-        trigger:'.workXp',
-        start:'top 20%',
-        end :'top 1%',
-        scrub:1
-      }
-    })
+      scrollTrigger: {
+        trigger: '.workXp',
+        start: 'top 20%',
+        end: 'top 1%',
+        scrub: 1,
+      },
+    });
     tl.to('.projects', {
-      backgroundColor:'#ffd8e3' 
+      backgroundColor: '#ffd8e3',
     })
-    .to('.workXp',{
-      backgroundColor:'#ffd8e3' 
-    }, 0)
-    .to('.workXp__title',{
-      x:0,
-      opacity:1      
-    })
-    
-    
-  }
+      .to('.workXp', {
+        backgroundColor: '#ffd8e3',
+      }, 0)
+      .to('.workXp__title', {
+        x: 0,
+        opacity: 1,
+      });
+  };
 
   const bgChangeHobbies = () => {
     const tl = gsap.timeline({
-      scrollTrigger:{
-        trigger:'.hobbies',
-        start:'-=200 70%',
-        end :'top 1%',
-        scrub:1,
-      }
-    })
+      scrollTrigger: {
+        trigger: '.hobbies',
+        start: '-=200 70%',
+        end: 'top 1%',
+        scrub: 1,
+      },
+    });
     tl.to('.workXp', {
-      backgroundColor:'#FFFFC2'
+      backgroundColor: '#FFFFC2',
     })
-    .to('.hobbies',{
-      backgroundColor:'#FFFFC2' 
-    }, 0)
-    
-  }
-  const hobbiesTitleFade = () =>{
+      .to('.hobbies', {
+        backgroundColor: '#FFFFC2',
+      }, 0);
+  };
+  const hobbiesTitleFade = () => {
     const tl = gsap.timeline({
-      scrollTrigger:{
-        trigger:'.hobbies',
+      scrollTrigger: {
+        trigger: '.hobbies',
         start: 'top 40%',
-        end:'top 40%',
+        end: 'top 40%',
 
-      }
+      },
     });
-    tl.to('.hobbies__panel__title',{
-      opacity:1,
-      duration:1.5,
-      y:0
-    })
-  }
-  const hobbiesBgFade = () =>{
+    tl.to('.hobbies__panel__title', {
+      opacity: 1,
+      duration: 1.5,
+      y: 0,
+    });
+  };
+  const hobbiesBgFade = () => {
     const tl = gsap.timeline({
-      scrollTrigger:{
-        trigger:'.hobbies',
+      scrollTrigger: {
+        trigger: '.hobbies',
         start: 'bottom top',
-        end:'+=200% top',
-        scrub:true,
+        end: '+=200% top',
+        scrub: true,
 
-        markers:false
-      }
+        markers: false,
+      },
     });
-    tl.to('.hobbies__panel',{
-      backgroundColor: 'rgb(32, 32, 32)'
-    })
-   
-  }
+    tl.to('.hobbies__panel', {
+      backgroundColor: 'rgb(32, 32, 32)',
+    });
+  };
 
-
-  {windowX < 560 ? 
-    useEffect(() => {
+  { windowX < 560
+    ? useEffect(() => {
       letterTitleMobile();
-      bgChangeHeader()
-      bgChangeXP()
-      bgChangeHobbies()
-      hobbiesTitleFade()
-      hobbiesBgFade()
+      bgChangeHeader();
+      bgChangeXP();
+      bgChangeHobbies();
+      hobbiesTitleFade();
+      hobbiesBgFade();
     }, [])
-    : 
-
-    useEffect(() => {
+    : useEffect(() => {
       letterTitle();
-      bgChangeHeader()
-      bgChangeXP()
-      bgChangeHobbies()
-      hobbiesTitleFade()
-      hobbiesBgFade()
+      bgChangeHeader();
+      bgChangeXP();
+      bgChangeHobbies();
+      hobbiesTitleFade();
+      hobbiesBgFade();
     }, []);
-    
-
   }
 
   return (
-    <div className='home'>
+    <div className="home">
       <Header />
       <Projects />
       <XP />
-      <Hobbies/>
-      <StillScroll/>
-      <Contact/>
+      <Hobbies />
+      <StillScroll />
+      <Contact />
     </div>
   );
 }

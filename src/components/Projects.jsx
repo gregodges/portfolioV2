@@ -16,7 +16,7 @@ function Projects() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: card,
-          start: 'top 70%',
+          start: 'top 80%',
           toggleActions: 'play none none resume',
           end: '68% 68%',
 
@@ -24,8 +24,8 @@ function Projects() {
       });
       tl.to(card, {
         opacity: 1,
-        y:0,
-        duration:.6
+        y: 0,
+        duration: 0.6,
       });
     });
   };
@@ -59,9 +59,9 @@ function Projects() {
     <div id="projects" className="projects">
       <h2 className="projects__title">projets</h2>
       <div className="projects__card__container">
-      {projects.map((proj, id) => (
-        <ProjetCard key={id} projet={proj} />
-      ))}
+        {projects.map((proj, id) => (
+          <ProjetCard key={id} projet={proj} />
+        ))}
       </div>
 
     </div>

@@ -10,8 +10,7 @@
   height: auto;
   margin: 1rem 0;
   transform: translateY(100px);
-  background-color:rgb(242, 255, 226);
-
+  background-color:$green;
   border-radius: 1rem;
   opacity: 0;
   font-family: $fontText;
@@ -26,7 +25,7 @@
     position: relative;
     padding: .5rem;
       opacity: 1;
-      color: rgb(79, 79, 79);
+      color: $black;
       z-index: 10;
   }
   h4{
@@ -35,6 +34,7 @@
     font-size: 3rem;
     opacity: 1;
     font-family: $font_header_thin;
+    color: $black;
   }
  
   &__img{

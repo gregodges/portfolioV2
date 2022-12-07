@@ -46,7 +46,24 @@
     }
     .photo6{
       top: 48%;
-      left: 95%;
+      left: 110%;
+    }
+    &__sub{
+      position: absolute;
+      width: 30vw;
+      height: auto;
+      color: $white;
+      font-size: 4rem;
+      font-family: $font_header_thin;
+      z-index: 100;
+    }
+    .sub1{
+      top: 40%;
+      left: 45%;
+    }
+    .sub2{
+      top: 20%;
+      left: 75%;
     }
     &__title{
       font-size:$font_size_sections_header;
@@ -59,7 +76,7 @@
     &__stillScrolling{
       border:1px solid white;
       font-family: $font_header_title;
-      color: rgb(233, 233, 233);
+      color: $white;
       border-radius: 200vw;
       font-size: 17vw;
       padding: 3vw  ;
@@ -70,6 +87,7 @@
   }
 
 }
+
 @media all and (min-width:650px) {
   .hobbies{
     &__panel{
@@ -84,7 +102,8 @@
     left: 90%;
     width: 30vw;
     height: auto;
-    background-color: $black;
+    background-color: transparent;
+    // background-color: $black;
 
   }
     }
@@ -97,6 +116,9 @@
 
       &__title{
     font-size: 12rem;
+  }
+  &__sub{
+    font-size: 6rem;
   }
 }
   }}

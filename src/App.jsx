@@ -1,11 +1,8 @@
 import './App.css';
 import '../style.scss';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './header.scss';
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/all";
-// import { ScrollToPlugin } from "gsap/all";
-// import { CSSRulePlugin } from 'gsap/all';
 import Alternance from './pages/Alternance';
 import Home from './pages/home';
 

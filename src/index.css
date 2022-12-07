@@ -1,8 +1,8 @@
 body{
   overflow-x: hidden;
 }
-a:hover{
-  cursor: url(src/assets/img/arrow_greg3.png), auto;
-
-  
+@media all and (min-width:1000px) {
+  a:hover{
+    cursor: url(src/assets/img/arrow_greg3.png) 20 2, auto;  
+  }
 }

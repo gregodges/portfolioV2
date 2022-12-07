@@ -1,0 +1,109 @@
+@import '../../style.scss';
+
+
+.xpCard{
+  position: relative;
+  transform: translateY(60vh)  scale(.3);
+  opacity: 0;
+  width: 85vw;
+  min-height: 80vh;
+  height: auto;
+  border-radius: 1rem;
+  background-color: $purple;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-family: $fontText;
+  padding: 1rem;
+  &__icon{
+    position: absolute;
+    top: 15%;
+    right: 0;
+    width: 40%;
+    height: auto;
+    opacity: .8;
+
+  }
+  &__title{
+    font-size: 2rem;
+    text-align: center;
+    font-family: $font_header_thin;
+  }
+ &__pills{
+   position: relative;
+   display: flex;;
+   flex-direction: column;
+   align-items:  center;
+   margin: .7rem 0;
+  &__company{
+    position: relative;
+    
+  }
+  &__years{
+    font-family: $font_title_project;
+
+  }
+ }
+  &__skills__container{
+
+    width: 90%;
+
+  }
+  &__description{
+    padding: .5rem;
+    text-align: center;
+    color: rgb(54, 54, 54);
+    z-index: 2;
+  }
+  &__skills{
+    list-style: lower-greek;
+    color: rgb(195, 195, 195);
+    z-index: 2;
+    padding: .5rem;
+    
+  }
+
+}
+.underline{
+  position: relative;
+  z-index: 1;
+
+
+&::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  height: 40%;
+  width: 60%;
+  background-color: rgba(107, 7, 132, 0.341);
+  border-radius: 10px;
+  z-index: -1;
+}
+}
+
+@media all and (min-width: 650px) {
+  .xpCard{
+    width: 65vw;
+    &__title{
+      font-size: 3rem;
+    }
+    &__icon{
+      top: 60%;
+    }
+  }
+}
+
+@media all and (min-width: 800px) {
+  .xpCard{
+    width: 27vw;
+    height: 70vh;
+    transform: translateY(60vh)  scale(1);
+    opacity: 0;
+    overflow-y: scroll;
+   
+  }
+}
+

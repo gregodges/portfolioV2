@@ -1,0 +1,50 @@
+@import '../../style.scss';
+.contact{
+  position: relative;
+  transform: translateY(130vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $black;
+  font-family: $font_header_thin;
+  margin-top: 40vh;
+
+  &__ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__li{
+      font-size: 3rem;
+      color: rgb(205, 205, 205);
+
+    }
+  }
+  a, span{
+    font-size: 3rem;
+    color: rgb(205, 205, 205);
+  }
+  a:hover{
+    cursor: pointer;
+  }
+  &__socials{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+    margin-top: 5%;
+  }
+}
+
+@media all and (min-width:650px) {
+  .contact__ul__li{
+    font-size: 4.5rem;
+    a, span{
+      font-size: 4.5rem;
+  
+    }
+  }
+}

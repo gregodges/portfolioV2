@@ -1,0 +1,96 @@
+@import '../../style.scss';
+.projetCard{
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: center;
+  width: 98vw;
+  min-height: 50vh;
+  height: auto;
+  margin: 1rem 0;
+  transform: translateY(100px);
+  background-color:$green;
+  border-radius: 1rem;
+  opacity: 0;
+  font-family: $fontText;
+  &__sparkle{
+    position: absolute;
+    width: 20vh;
+    height: auto;
+    top: -10%;
+    right: 0;
+  }
+  a{
+    position: relative;
+    padding: .5rem;
+      opacity: 1;
+      color: $black;
+      z-index: 10;
+  }
+  h4{
+   position: relative;
+   text-align: center;
+    font-size: 3rem;
+    opacity: 1;
+    font-family: $font_header_thin;
+    color: $black;
+  }
+ 
+  &__img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    opacity: 1;
+    border-radius: .5rem;
+    margin: 1rem 0 0 0 ;
+  }
+  p{
+    position: relative;
+    padding: .5rem;
+  }
+ 
+  .stacks{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    .stack{
+      position: relative;
+      font-size: .8rem;
+      margin: .5rem ;
+      padding: .3rem;
+      border: 1px solid rgb(200, 200, 200);
+      border-radius: 5px;
+      background-color: $projectsColorDark;
+      font-family: $font_title_project;
+    }
+  }
+ 
+}
+
+@media all and (min-width : 650px){
+  .projetCard{
+    width: 40vw;
+    h4{
+      font-size: 4rem;
+
+      
+    }
+    &__sparkle{
+      right: -20%;
+    }
+  }
+
+}
+
+@media all and (min-width: 1000px) {
+ .projetCard{
+  &__sparkle{
+    right: -10%;
+  }
+   p{
+     font-size: 1.3rem;
+   }
+ } 
+}

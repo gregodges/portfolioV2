@@ -1,0 +1,48 @@
+@import '../../style.scss';
+@font-face {
+  font-family: 'finder_thin';
+  src: url('src/assets/fonts/Wayfinder CF Thin.otf');
+}
+.projects{
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  transform: translateY(150vh);
+  background-color: $projectsColor;
+
+  &__title{
+    position: relative;
+    font-size: 6rem;
+    cursor: default;
+    padding-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(50px);
+    font-family: finder_thin;
+    text-transform: uppercase;
+    color: $black;
+  }
+}
+
+@media all and (min-width : 650px) {
+  .projects{
+    &__title{
+      margin-bottom: 2rem;
+      font-size: 9rem;
+    }
+    &__card__container{
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      gap: 5%;
+    }
+  }
+}
+@media all and (min-width: 800px) {
+  .projects__title{
+    font-size: 12rem;
+  }
+  
+}

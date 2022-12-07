@@ -1,0 +1,99 @@
+@import '../../style.scss';
+
+.alternance{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $black;
+  color: $white;
+  padding: .2rem;
+  a:hover{
+    cursor: pointer;
+  }
+
+  &__title{
+    font-family: $font_header_title;
+    color: $white;
+    font-size: 3rem;
+    margin: 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+
+  }
+  &__questions{
+    font-size: 2rem;
+    color: $wildCodeSchoolColor;
+    font-family: $font_header_thin;
+
+  }
+  &__answers{
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+  a{
+  color: $white;
+  text-decoration: underline;
+  }
+  &__source{
+    position: relative;
+    width: 100%;
+    margin: 2rem 0;
+    font-family: $fontText;
+    &__title{
+      font-family: $font_header_thin;
+      font-size: 2rem;
+      color: $wildCodeSchoolColor;
+      text-decoration: underline;
+      padding:  .5rem 0;
+    }
+  }
+}
+
+@media all and (min-width:1200px) {
+  .alternance{
+    padding: 1.5rem;
+    &__faq{
+      display: flex;
+      flex-direction: row;
+    }
+    &__title{
+      text-align: center;
+    }
+ &__questions{
+   width: 80%;
+   align-self: flex-start;
+ }
+ &__answers{
+   width: 50%;
+   align-self: flex-start;
+ }
+ &__source{
+  position: relative;
+  width: 100%;
+  margin: 2rem;
+  font-family: $fontText;
+  &__title{
+    font-family: $font_header_thin;
+    font-size: 2rem;
+    color: $wildCodeSchoolColor;
+    text-decoration: underline;
+    padding:  1rem 0;
+  }
+  li{
+    margin: .6rem;
+    a{
+      color: rgb(118, 118, 118);
+      &:hover{
+        color: $white;
+      }
+    }
+  }
+}
+  }
+
+  
+}

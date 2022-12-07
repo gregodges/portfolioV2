@@ -7,8 +7,8 @@ function Contact() {
     <div className="contact">
       <ul className="contact__ul">
         <li className="contact__ul__li"><a href="mailto:ledez.greg@gmail.com">LEDEZ.GREG@GMAIL.COM</a></li>
-        <li className="contact__ul__li"><span>06-40-55-71-42</span></li>
         <li className="contact__ul__li"><a target="_blank" href="https://github.com/gregodges" rel="noreferrer">GITHUB/GREGODGES</a></li>
+        <li className="contact__ul__li"><span>06-40-55-71-42</span></li>
         <NavLink to="./infoalternance">
           <li className="contact__ul__li"><span>F.A.Q</span></li>
         </NavLink>

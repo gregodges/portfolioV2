@@ -1,6 +1,7 @@
 import React from 'react';
 import './contact.scss';
 import { NavLink } from 'react-router-dom';
+import resume from '../assets/CV_LEDEZ_GREGORY.pdf'
 
 function Contact() {
   return (
@@ -15,7 +16,7 @@ function Contact() {
       </ul>
       <div className="contact__socials">
         <a href="https://www.linkedin.com/in/ledezgregory/">LinkedIn</a>
-        <a target="_blank" href="src/assets/CV_LEDEZ_GREGORY.pdf" >Curriculum</a>
+        <a target="_blank" href={resume} >Curriculum</a>
       </div>
 
     </div>

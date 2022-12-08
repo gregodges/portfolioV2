@@ -7,7 +7,6 @@ import photo2 from '../assets/img/parallax/1302-02a.png'
 import photo3 from '../assets/img/parallax/1302-14a.png'
 import photo4 from '../assets/img/parallax/1302-18a.png'
 import photo5 from '../assets/img/parallax/1303-06a.png'
-// import photo6 from '../assets/img/parallax/001004030016.png'
 import photo7 from '../assets/img/parallax/001025280010.png'
 import photo8 from '../assets/img/parallax/CNV000007.png'
 import photo9 from '../assets/img/parallax/CNV000013.png'
@@ -21,7 +20,6 @@ import photo16 from '../assets/img/parallax/G (3).png'
 import photo17 from '../assets/img/parallax/G (66).png'
 import photo18 from '../assets/img/parallax/G (106).png'
 import photo19 from '../assets/img/parallax/G (120).png'
-// import photo20 from '../assets/img/parallax/G.png'
 
 
 
@@ -164,7 +162,7 @@ function Hobbies() {
         <img className="hobbies__panel__photo photo3 photoSlow" src={photo4} alt="" />
         <img className="hobbies__panel__photo photo4 photoMid" src={photo5} alt="" />
         <h2 className="hobbies__panel__sub sub2">Photography</h2>
-        <img className="hobbies__panel__photo photo2 photoFast" src={photo8} alt="" /> // ici
+        <img className="hobbies__panel__photo photo2 photoFast" src={photo8} alt="" />
         <img className="hobbies__panel__photo photo6 photoMid" src={photo7} alt="" />
       </section>
       <section className="hobbies__panel">

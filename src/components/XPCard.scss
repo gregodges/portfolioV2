@@ -103,7 +103,7 @@
     height: 70vh;
     transform: translateY(60vh)  scale(1);
     opacity: 0;
-    overflow-y: scroll;
+    overflow-y: hidden;
     
    
   }
@@ -111,8 +111,8 @@
 @media all and (min-width: 1800px) {
   .xpCard{
     width: 30vw;
-    min-height: 60vh;
-    height: 60vh;
+    min-height: 80vh;
+    height: 90vh;
     &__title{
       font-size: 5rem;
     }

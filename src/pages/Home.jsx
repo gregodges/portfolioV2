@@ -80,6 +80,7 @@ function Home() {
     gsap.to('.header', {
       backgroundColor: '#d0f1f1',
       y: '-100',
+      x:0,
       opacity: 0,
       scrollTrigger: {
         trigger: '.header',

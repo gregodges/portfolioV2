@@ -32,12 +32,12 @@ function Alternance() {
           </p>
           <h2 className="alternance__questions">Ok, les technos c'est bien mais, les soft skills là dedans ?</h2>
           <p className="alternance__answers">
-            À la Wild Code School, où je suis actuellement en formation, on nous apprends à travailler selon les methodes AGILE (SCRUM).
+            À la Wild Code School, où je suis actuellement en formation, on nous apprend à travailler selon les methodes AGILE (SCRUM).
             En effet, pour chaque projet nous développons un backlog et effectuons les sprints en fonctions du temps imparti.
           </p>
           <h2 className="alternance__questions">Ok, je suis presque convaincu, mais ça engendre un coût</h2>
           <p className="alternance__answers">
-            Le prix de la formation peut être pris en charge en grande parti par l'OPCO. Il restera néanmoins un reste à charge.
+            Le prix de la formation peut être pris en charge en grande partie par l'OPCO. Il restera néanmoins un reste à charge.
             Aide du Pole Emploi, plafonnée à 2000 euros .
             Pour plus d'informations, vous pouvez contacter
             {' '}

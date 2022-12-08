@@ -6,11 +6,17 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   background-color: $black;
   color: $white;
-  padding: .2rem;
+
+  overflow-x: hidden;
+  &__faq{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
   a:hover{
     cursor: pointer;
   }
@@ -46,6 +52,7 @@
     width: 100%;
     margin: 2rem 0;
     font-family: $fontText;
+    width: 80%;
     &__title{
       font-family: $font_header;
       font-weight: $font_weight_header_thin;

@@ -1,8 +1,12 @@
 import React from 'react';
 import './Alternance.scss';
 import { NavLink } from 'react-router-dom';
+import { useEffect } from 'react';
 
 function Alternance() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="alternance">
       <NavLink to="/">

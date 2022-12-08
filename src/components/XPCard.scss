@@ -29,7 +29,8 @@
   &__title{
     font-size: 2rem;
     text-align: center;
-    font-family: $font_header_thin;
+    font-family: $font_header;
+    font-weight: $font_weight_header_thin;
   }
  &__pills{
    position: relative;

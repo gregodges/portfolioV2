@@ -21,7 +21,7 @@ function Home() {
       .to(
         '.header__title__letter',
         {
-          y: -250,
+          y: -220,
           opacity: 1,
           stagger: 0.03,
           duration: 1.5,
@@ -52,7 +52,7 @@ function Home() {
       .to(
         '.header__title__letter',
         {
-          y: -150,
+          y: -140,
           opacity: 1,
           stagger: 0.03,
           duration: 1.5,

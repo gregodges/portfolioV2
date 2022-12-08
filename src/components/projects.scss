@@ -18,7 +18,8 @@
     padding-bottom: 2rem;
     opacity: 0;
     transform: translateY(50px);
-    font-family: finder_thin;
+    font-family:$font_header;
+    font-weight: $font_weight_header_thin;
     text-transform: uppercase;
     color: $black;
   }

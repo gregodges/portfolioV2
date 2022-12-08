@@ -1,20 +1,11 @@
 
 @font-face {
-  font-family: 'fontText';
-  src: url('src/assets/fonts/Poppins-Light.TTF');
-}
-@font-face {
-  font-family: 'textMedium';
-  src: url('src/assets/fonts/Poppins-Regular.TTF');
-}
-@font-face {
-  font-family: 'wayfinder-CF, serif';
+  font-family: 'wayfinder-cf', serif;
   src: 'https://use.typekit.net/tgu1yzm.css';
+
 }
-@font-face {
-  font-family: 'finderThin';
-  src: url('src/assets/fonts/Wayfinder CF Thin.OTF');
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
 
 
 
@@ -25,10 +16,11 @@ $wildCodeSchoolColor : #F76A6A;
 $projectsColor :#d0f1f1;
 $projectsColorDark :#d0e3e397;
 $workColor:#ffd8e3;
-$fontText : fontText;
-$font_title_project: textMedium;
-$font_header_title : wayfinder-CF;
-$font_header_thin : finderThin;
+$fontText : Poppins;
+$font_title_project: Poppins;
+$font_header : wayfinder-cf;
+$font_weight_header: 700;
+$font_weight_header_thin: 100;
 $font_size_sections_header : 8rem;
 $black :rgb(32, 32, 32);
 $white: rgb(209, 209, 209);

@@ -16,7 +16,8 @@
   }
 
   &__title{
-    font-family: $font_header_title;
+    font-family: $font_header;
+    font-weight: $font_weight_header;
     color: $white;
     font-size: 3rem;
     margin: 1rem;
@@ -27,7 +28,9 @@
   &__questions{
     font-size: 2rem;
     color: $wildCodeSchoolColor;
-    font-family: $font_header_thin;
+    font-family: $font_header;
+    font-weight: $font_weight_header_thin;
+    margin: 1rem 0;
 
   }
   &__answers{
@@ -44,7 +47,8 @@
     margin: 2rem 0;
     font-family: $fontText;
     &__title{
-      font-family: $font_header_thin;
+      font-family: $font_header;
+      font-weight: $font_weight_header_thin;
       font-size: 2rem;
       color: $wildCodeSchoolColor;
       text-decoration: underline;
@@ -77,7 +81,8 @@
   margin: 2rem;
   font-family: $fontText;
   &__title{
-    font-family: $font_header_thin;
+    font-family: $font_header;
+    font-weight: $font_weight_header_thin;
     font-size: 2rem;
     color: $wildCodeSchoolColor;
     text-decoration: underline;

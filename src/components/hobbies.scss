@@ -54,7 +54,8 @@
       height: auto;
       color: $white;
       font-size: 4rem;
-      font-family: $font_header_thin;
+      font-family: $font_header;
+      font-weight: $font_weight_header_thin;
       z-index: 100;
     }
     .sub1{
@@ -70,12 +71,14 @@
       opacity: 0;
       transform: translateY(300px);
       z-index: 100;
-      font-family: $font_header_thin;
+      font-family: $font_header;
+      font-weight: $font_weight_header_thin;
     }
     
     &__stillScrolling{
       border:1px solid white;
-      font-family: $font_header_title;
+      font-family: $font_header;
+      font-weight: $font_weight_header;
       color: $white;
       border-radius: 200vw;
       font-size: 17vw;
@@ -91,7 +94,7 @@
 @media all and (min-width:650px) {
   .hobbies{
     &__panel{
-    z-index: 700,
+    z-index: 700;
 
       &__title{
     font-size: 9rem;

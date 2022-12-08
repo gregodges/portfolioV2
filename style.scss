@@ -1,19 +1,22 @@
+
+
 @font-face {
   font-family: 'fontText';
-  src: url('src/assets/fonts/Poppins-Light.ttf');
+  src: url('src/assets/fonts/Poppins-Light.TTF');
 }
 @font-face {
   font-family: 'textMedium';
-  src: url('src/assets/fonts/Poppins-Regular.ttf');
+  src: url('src/assets/fonts/Poppins-Regular.TTF');
 }
 @font-face {
   font-family: 'title';
-  src: url('src/assets/fonts/Wayfinder CF Bold.otf');
+  src: url('src/assets/fonts/Wayfinder CF Bold.OTF');
 }
 @font-face {
   font-family: 'finderThin';
-  src: url('src/assets/fonts/Wayfinder CF Thin.otf');
+  src: url('src/assets/fonts/Wayfinder CF Thin.OTF');
 }
+
 
 
 $main_text: rgb(20, 19, 19);
@@ -32,6 +35,7 @@ $black :rgb(32, 32, 32);
 $white: rgb(209, 209, 209);
 $purple: #AE69EE;
 $green:rgb(242, 255, 226);
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,

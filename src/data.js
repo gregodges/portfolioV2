@@ -1,3 +1,10 @@
+import olimPhoto from '../src/assets/img/olim.png'
+import timeTravelPhoto from '../src/assets/img/timetraveler.png'
+import drinkrPhoto from '../src/assets/img/drinkr.png'
+import weekndPhoto from '../src/assets/img/theweeknd.png'
+import montBlancPhoto from '../src/assets/img/Montblanc.png'
+import rockPhoto from '../src/assets/img/game-index.png'
+import sophiePhoto from '../src/assets/img/Sophie-Photography.png'
 const data = [
   {
     id: 1,
@@ -5,7 +12,7 @@ const data = [
     txt: "Olim est un site web et mobile permettant aux utilisateurs de  chiner ou d'acheter du mobilier, objets de décoration. ",
     stack: ['HTML', 'SCSS', 'React.js', 'Express.js', 'MySQL', 'GitHub'],
     github: 'http://www.github.com',
-    photo: 'src/assets/img/olim.png',
+    photo: olimPhoto,
   },
   {
     id: 2,
@@ -13,7 +20,7 @@ const data = [
     txt: 'Ce projet a été développé en 24h lors du hackaton de la Wild Code School. Le sujet était simple, livrer un projet web sur le thème du voyage. Nous avons décidé de développer un mini jeu dans le navigateur. Ce projet nous a valu le prix du jury. ',
     stack: ['HTML', 'SCSS', 'Vanilla.Js', 'GSAP', 'GitHub'],
     github: 'https://github.com/gregodges/time-travel',
-    photo: 'src/assets/img/timetraveler.png',
+    photo: timeTravelPhoto,
   },
   {
     id: 3,
@@ -21,7 +28,7 @@ const data = [
     txt: "Drink'r est un moteur de recherche de cocktails, faisant appel à un API. Il a été développé de A à Z en 6 semaines, en suivant la méthode AGILE",
     stack: ['HTML', 'CSS', 'React.js', 'GitHub'],
     github: 'https://drink-r.netlify.app/',
-    photo: 'src/assets/img/drinkr.png',
+    photo: drinkrPhoto,
   },
   {
     id: 4,
@@ -29,7 +36,7 @@ const data = [
     txt: "Ce site vitrine pour promouvoir la  tournée de l'artiste The Weeknd a été réalisé en 2 semaines dans le cadre d'un projet d'ecole.",
     stack: ['HTML', 'CSS', 'Vanilla.js', 'GitHub'],
     github: 'https://github.com/gregodges/theWeeknd-project',
-    photo: 'src/assets/img/theweeknd.png',
+    photo: weekndPhoto,
   },
   {
     id: 5,
@@ -37,7 +44,7 @@ const data = [
     txt: "Site vitrine réalisé pour travailler les notions en CSS et les bases de l'intégration via un projet du Youtuber BenjaminCode",
     stack: ['HTML', 'CSS'],
     github: 'https://github.com/gregodges/Montblanc',
-    photo: 'src/assets/img/Montblanc.png',
+    photo: montBlancPhoto,
   },
   {
     id: 6,
@@ -45,7 +52,7 @@ const data = [
     txt: "Mini jeu 'pierre papier ciseaux' développé pour apprendre les bases de JavaScript et l'algorithmie, ainsi que l'implémentation d'un Dark Mode.",
     stack: ['HTML', 'CSS', 'Vanilla.js'],
     github: 'https://github.com/gregodges/Rock-paper-scissors',
-    photo: 'src/assets/img/game-index.png',
+    photo: rockPhoto,
   },
   {
     id: 7,
@@ -53,7 +60,7 @@ const data = [
     txt: "Site vitrine pour une photographe fictive réalisé dans le but d'intégrer une école de developpement web",
     stack: ['HTML', 'CSS'],
     github: 'https://github.com/gregodges/Sophie-Photography',
-    photo: 'src/assets/img/Sophie-Photography.png',
+    photo: sophiePhoto,
   },
 ];
 export const XPProMain = [

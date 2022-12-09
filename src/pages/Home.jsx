@@ -47,8 +47,8 @@ function Home() {
   };
 
   const letterTitleMobile = () => {
-    const headerTl = gsap.timeline();
-    headerTl
+    const headerTlMobile = gsap.timeline();
+    headerTlMobile
       .to(
         '.header__title__letter',
         {
@@ -176,9 +176,12 @@ function Home() {
       bgChangeHobbies();
       hobbiesTitleFade();
       hobbiesBgFade();
+
     }, []);
   }
-
+useEffect(()=>{
+  window.scrollTo(0,0) //changes
+},[])
   return (
     <div className="home">
       <Header />

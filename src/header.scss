@@ -23,7 +23,6 @@
   font-family: $font_header;
   font-weight: $font_weight_header;
   overflow: hidden;
-  // border: 1px solid black;
   &__letter{
     display: inline-block;
     line-height: 8.5rem;
@@ -41,7 +40,7 @@
     color: $main_text;
     opacity: 0;
     height: auto;
-    // border: 1px solid black;
+
     
     span{
       position: relative;

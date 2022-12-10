@@ -15,7 +15,7 @@ function Contact() {
         </NavLink>
       </ul>
       <div className="contact__socials">
-        <a href="https://www.linkedin.com/in/ledezgregory/">LinkedIn</a>
+        <a target="_blank" href="https://www.linkedin.com/in/ledezgregory/">LinkedIn</a>
         <a target="_blank" href={resume} >Curriculum</a>
       </div>
 

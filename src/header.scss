@@ -49,6 +49,8 @@
     &-alternance{
       position: relative;
       display: inline-block;
+      pointer-events: all;
+
 
     }
    &-alternance::before{
